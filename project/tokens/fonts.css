@@ -1,0 +1,9 @@
+/* CodeKerdos webfonts. Both faces are the site's own: Public Sans (display) + Inter (body).
+   Served from Google Fonts — no local binaries were provided. */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-display: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace; /* @kind font */
+}

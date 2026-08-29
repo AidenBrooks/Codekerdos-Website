@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hero A — Editorial</title>
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+:root{--paper:#FBFAF8;--ink:#0F1B2A;--ink-2:#4A5A70;--ink-3:#8593A6;--brand:#13B0E8;--brand-deep:#0072FF;--brand-ink:#0B6382}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--paper);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1{font-family:var(--font-display);margin:0}p{margin:0}a{text-decoration:none;color:var(--brand-ink)}a:hover{color:var(--brand)}
+.nav{max-width:1440px;margin:0 auto;padding:26px 56px;display:flex;align-items:center;gap:40px;border-bottom:1px solid rgba(15,27,42,.08)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font:800 20px/1 var(--font-display);letter-spacing:-.6px}
+.brand span{width:34px;height:34px;border-radius:10px;background:var(--ck-grad-button);display:grid;place-items:center;font-size:13px;color:#fff;letter-spacing:-1px}
+.brand span b{color:#BFF0FF}
+.links{display:flex;gap:26px;margin:0 auto}
+.links a{color:var(--ink-2);font-size:14px;font-weight:600}.links a.on{color:var(--ink);border-bottom:2px solid var(--brand);padding-bottom:3px}
+.login{font-size:14px;font-weight:700;color:var(--ink);border:1.5px solid var(--ink);padding:10px 22px;border-radius:6px}
+.login:hover{color:#fff;background:var(--ink)}
+.hero{position:relative;max-width:1440px;margin:0 auto;padding:0 0 0 56px;display:grid;grid-template-columns:minmax(0,660px) minmax(0,1fr);gap:24px;align-items:end;overflow:hidden}
+.copy{padding:78px 0 84px}
+.kicker{display:flex;align-items:center;gap:14px;font:800 11.5px/1 var(--font-display);letter-spacing:2.4px;text-transform:uppercase;color:var(--brand-ink)}
+.kicker::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(19,176,232,.5),transparent)}
+h1{margin-top:26px;font-size:76px;font-weight:900;line-height:.98;letter-spacing:-3.6px}
+h1 em{font-style:normal;display:block;color:var(--brand-deep)}
+.sub{margin-top:26px;max-width:520px;color:var(--ink-2);font-size:16.5px;line-height:1.74}
+.search{display:flex;align-items:center;gap:12px;margin-top:32px;max-width:540px;border-bottom:1.5px solid var(--ink);padding:0 0 12px}
+.search .mag{width:16px;height:16px;flex:0 0 16px;border:2px solid var(--ink);border-radius:50%;position:relative}
+.search .mag::after{content:"";position:absolute;right:-5px;bottom:-4px;width:7px;height:2px;background:var(--ink);transform:rotate(45deg)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:400 16px/1 var(--font-body);color:var(--ink)}
+.search input::placeholder{color:var(--ink-3)}
+.search button{border:0;background:none;cursor:pointer;font:800 13px/1 var(--font-display);letter-spacing:1.6px;text-transform:uppercase;color:var(--brand-deep)}
+.cta{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.p1{background:var(--ink);color:#fff;font-weight:700;font-size:15px;padding:16px 28px;border-radius:6px}.p1:hover{color:#fff;background:var(--brand-deep)}
+.p2{color:var(--ink);font-weight:700;font-size:15px;padding:16px 22px;border-radius:6px;border:1.5px solid rgba(15,27,42,.18)}.p2:hover{color:var(--ink);border-color:var(--ink)}
+.facts{display:flex;gap:44px;margin-top:52px}
+.facts div b{display:block;font:900 32px/1 var(--font-display);letter-spacing:-1.4px;color:var(--ink)}
+.facts div em{display:block;font-style:normal;margin-top:7px;font-size:12.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--ink-3)}
+.art{position:relative;height:720px}
+.disc{position:absolute;right:-140px;bottom:0;width:660px;height:660px;border-radius:50%;background:linear-gradient(160deg,#DDF1FC,#BCDFF6)}
+.rule{position:absolute;right:0;bottom:180px;left:-40px;height:1px;background:rgba(15,27,42,.1)}
+.art img{position:absolute;right:70px;bottom:0;height:660px;width:auto;display:block;filter:drop-shadow(-24px 30px 44px rgba(11,50,90,.18))}
+.ticker{border-top:1px solid rgba(15,27,42,.08);border-bottom:1px solid rgba(15,27,42,.08);background:#fff;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.tk{display:flex;gap:0;width:max-content;animation:sl 42s linear infinite}
+@keyframes sl{to{transform:translateX(-50%)}}
+.tk div{display:flex;align-items:baseline;gap:10px;padding:20px 34px;border-right:1px solid rgba(15,27,42,.08);white-space:nowrap}
+.tk b{font:800 14.5px/1 var(--font-display);letter-spacing:-.2px;color:var(--ink)}
+.tk em{font-style:normal;font-size:12.5px;color:var(--ink-3)}
+.tk i{font-style:normal;font:600 10px/1 var(--font-mono);color:var(--brand);letter-spacing:1px}
+.pt{max-width:1440px;margin:0 auto;padding:34px 56px;display:flex;align-items:center;gap:34px;flex-wrap:wrap}
+.pt h4{margin:0;font:800 11.5px/1.5 var(--font-display);letter-spacing:1.8px;text-transform:uppercase;color:var(--ink-3);max-width:130px}
+.pt ul{list-style:none;display:flex;gap:30px;margin:0;padding:0;flex-wrap:wrap}
+.pt li{font:700 19px/1 var(--font-display);letter-spacing:-.4px;color:#5B6A80}
+@media(max-width:1240px){.hero{grid-template-columns:1fr;padding-right:56px}.art{height:520px}.art img{height:480px;right:20px}.disc{right:-80px;width:440px;height:440px}.links{display:none}}
+</style></head><body>
+<nav class="nav"><a class="brand" href="#"><span>C<b>K</b></span>CodeKerdos</a>
+<div class="links"><a class="on" href="#">Overview</a><a href="#">Courses</a><a href="#">Masterclass</a><a href="#">Testimonials</a><a href="#">Blogs</a><a href="#">FAQs</a><a href="#">Contact</a></div>
+<a class="login" href="#">Login</a></nav>
+<header class="hero">
+<div class="copy">
+<div class="kicker">India's Most Practical AI Engineering Platform</div>
+<h1>Build AI Products.<em>Crack Top Interviews.</em>Get Hired Faster.</h1>
+<p class="sub">Master DSA &amp; System Design, Gen-AI with RAG &amp; Agentic AI, DevOps/SRE, And AI FDE with Live Mentorship and Real-World Production-Grade Projects.</p>
+<form class="search" onsubmit="return false" role="search"><span class="mag"></span><input type="search" aria-label="Search courses" placeholder="Search courses, topics or skills"><button type="submit">Search</button></form>
+<div class="cta"><a class="p1" href="#">Book A Free Webinar</a><a class="p2" href="#">Request A Callback</a></div>
+<div class="facts"><div><b>19K+</b><em>Trusted by</em></div><div><b>Online</b><em>Live cohorts</em></div><div><b>Hands-On</b><em>Certificate</em></div></div>
+</div>
+<div class="art"><span class="disc"></span><span class="rule"></span><img src="../character-cutout.png" alt="CodeKerdos learner with a laptop"></div>
+</header>
+<div class="ticker"><div class="tk">
+<div><i>01</i><b>AI &amp; GenAI</b><em>Build intelligent AI powered apps</em></div>
+<div><i>02</i><b>Spring Boot With AI</b><em>Spring Cloud Microservices &amp; more</em></div>
+<div><i>03</i><b>System Design</b><em>Design scalable Systems</em></div>
+<div><i>04</i><b>DevOps &amp; SRE</b><em>AWS Kubernetes SRE Practices</em></div>
+<div><i>05</i><b>Data Structures &amp; Algorithms</b><em>Fundamentals for Interviews</em></div>
+<div><i>06</i><b>Real-world Projects</b><em>Build Deploy Showcase.</em></div>
+<div><i>07</i><b>Career &amp; Interview Preparation</b><em>Mock Interviews &amp; Resumes Placement Support</em></div>
+<div><i>01</i><b>AI &amp; GenAI</b><em>Build intelligent AI powered apps</em></div>
+<div><i>02</i><b>Spring Boot With AI</b><em>Spring Cloud Microservices &amp; more</em></div>
+<div><i>03</i><b>System Design</b><em>Design scalable Systems</em></div>
+<div><i>04</i><b>DevOps &amp; SRE</b><em>AWS Kubernetes SRE Practices</em></div>
+<div><i>05</i><b>Data Structures &amp; Algorithms</b><em>Fundamentals for Interviews</em></div>
+<div><i>06</i><b>Real-world Projects</b><em>Build Deploy Showcase.</em></div>
+<div><i>07</i><b>Career &amp; Interview Preparation</b><em>Mock Interviews &amp; Resumes Placement Support</em></div>
+</div></div>
+<div class="pt"><h4>Learners hired at</h4><ul><li>Samsung</li><li>Swiggy</li><li>Oracle</li><li>Google</li><li>Microsoft</li><li>amazon.in</li><li>Meta</li><li>zomato</li><li>Flipkart</li></ul></div>
+</body></html>

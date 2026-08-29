@@ -1,0 +1,57 @@
+<!-- @dsCard group="Website" viewport="1440x900" name="Hero E — Poster" subtitle="One huge headline, character standing through it, minimal chrome" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hero E — Poster</title>
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+:root{--page:#EAF6FD;--brand:#13B0E8;--brand-deep:#0072FF;--brand-ink:#0B6382;--ink:#0A1522;--ink-2:#4A5C73;--ink-3:#7F91A6}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+h1{font-family:var(--font-display);margin:0}p{margin:0}
+a{color:var(--brand-ink);text-decoration:none}a:hover{color:var(--brand)}
+::selection{background:var(--brand);color:#fff}
+.hero{position:relative;width:1440px;height:900px;overflow:hidden;background:radial-gradient(120% 90% at 50% 6%,#FFFFFF 0%,#EAF6FD 52%,#D8EEFA 100%)}
+.nav{position:relative;z-index:8;padding:32px 64px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:32px;height:32px;border-radius:10px;background:var(--ck-grad-button);display:grid;place-items:center;font:800 12.5px/1 var(--font-display);letter-spacing:-.6px;color:#fff}
+.brand-mark b{color:#BFF0FF}
+.brand-word{font:800 17.5px/1 var(--font-display);letter-spacing:-.5px}
+.nav a.ghost{font:600 13.5px/1 var(--font-display);color:var(--ink-2)}
+.nav a.ghost:hover{color:var(--brand-ink)}
+.poster{position:absolute;left:0;right:0;top:150px;z-index:3;text-align:center}
+.kicker{font:600 11.5px/1 var(--font-mono);letter-spacing:2.6px;text-transform:uppercase;color:var(--brand-ink);opacity:0;animation:up .7s .1s cubic-bezier(.2,.7,.3,1) forwards}
+h1{margin-top:26px;font-weight:800;font-size:132px;line-height:.88;letter-spacing:-6px}
+h1 span{display:block;overflow:hidden}
+h1 span i{display:block;font-style:normal;transform:translateY(105%);animation:rise .9s cubic-bezier(.2,.75,.25,1) forwards}
+h1 span:nth-child(2) i{animation-delay:.12s}
+h1 .accent{color:var(--brand-deep)}
+.rot{display:inline-grid;vertical-align:top;height:.88em;overflow:hidden;text-align:left}
+.rot b{display:block;font-weight:800;color:var(--brand-deep);animation:cycle 9s steps(1,end) infinite}
+@keyframes rise{to{transform:translateY(0)}}
+@keyframes up{to{opacity:1}}
+@keyframes cycle{0%,33%{transform:translateY(0)}34%,66%{transform:translateY(-100%)}67%,100%{transform:translateY(-200%)}}
+.figure{position:absolute;left:50%;bottom:0;transform:translateX(-50%);z-index:5;width:660px;height:660px}
+.figure::before{content:"";position:absolute;left:50%;bottom:-160px;transform:translateX(-50%);width:760px;height:760px;border-radius:50%;background:radial-gradient(closest-side,rgba(19,176,232,.26),rgba(19,176,232,0) 70%)}
+.figure img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:660px;width:auto;display:block;filter:drop-shadow(0 30px 54px rgba(11,50,90,.22));animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-14px)}}
+.side{position:absolute;bottom:96px;z-index:7;width:206px;font-size:13.5px;line-height:1.6;color:var(--ink-2);text-wrap:pretty}
+.side.l{left:64px}.side.r{right:64px;text-align:right}
+.side b{display:block;font:700 12px/1 var(--font-mono);letter-spacing:1.6px;text-transform:uppercase;color:var(--brand-ink);margin-bottom:10px}
+.cta{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);z-index:9;display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border-radius:999px;padding:10px 10px 10px 26px;box-shadow:0 18px 46px rgba(11,50,90,.16)}
+.cta span{font:600 14.5px/1 var(--font-display);color:var(--ink)}
+.cta a{display:inline-flex;align-items:center;gap:9px;background:var(--ck-grad-button);color:#fff;font:700 14.5px/1 var(--font-display);padding:15px 26px;border-radius:999px;transition:transform .2s,box-shadow .2s}
+.cta a:hover{color:#fff;transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,114,255,.34)}
+</style></head><body>
+<section class="hero" data-screen-label="Hero E — Poster">
+<nav class="nav">
+<a class="brand" href="#"><span class="brand-mark">C<b>K</b></span><span class="brand-word">CodeKerdos</span></a>
+<a class="ghost" href="#">Programs · Mentors · Outcomes</a>
+</nav>
+<div class="poster">
+<div class="kicker">Live cohorts · 2026</div>
+<h1><span><i>Engineers are</i></span><span><i>made <span class="rot"><b>here.</b><b>daily.</b><b>together.</b></span></i></span></h1>
+</div>
+<div class="figure"><img src="../character-cutout.png" alt="CodeKerdos learner with a laptop"></div>
+<p class="side l"><b>Built for</b>Working developers and final-year students who want the job, not the certificate.</p>
+<p class="side r"><b>Proof</b>96% placed within six months. Median CTC ₹18.4L across eight live tracks.</p>
+<div class="cta"><span>Next cohort opens 14 Sept</span><a href="#">Reserve a seat</a></div>
+</section>
+</body></html>

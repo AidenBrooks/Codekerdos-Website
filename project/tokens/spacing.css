@@ -1,0 +1,22 @@
+:root {
+  /* Spacing scale — 4 / 8 / 16 / 24 / 48 / 96 */
+  --ck-space-1: 4px;    /* icon gaps */
+  --ck-space-2: 8px;    /* tight groups */
+  --ck-space-3: 16px;   /* chip padding */
+  --ck-space-4: 24px;   /* card padding */
+  --ck-space-5: 48px;   /* section gutter */
+  --ck-space-6: 96px;   /* section top/bottom padding */
+
+  /* Radius scale */
+  --ck-radius-chip: 10px;
+  --ck-radius-step: 14px;
+  --ck-radius-card: 20px;
+  --ck-radius-orb: 32px;
+  --ck-radius-pill: 999px;
+
+  /* Layout */
+  --ck-container: 1200px; /* @kind spacing */
+  --ck-gutter: var(--ck-space-5);
+  --ck-section-y: var(--ck-space-6);
+  --ck-card-padding: 28px;
+}

@@ -1,0 +1,30 @@
+:root {
+  --ck-ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ck-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ck-dur-hover: 200ms; /* @kind other */
+  --ck-dur-reveal: 600ms; /* @kind other */
+  --ck-dur-countup: 1200ms; /* @kind other */
+  --ck-dur-pulse: 4s; /* @kind other */
+  --ck-stagger: 80ms; /* @kind other */
+  --ck-cycle-interval: 4s; /* @kind other */
+  --ck-lift: -4px; /* @kind other */
+}
+
+@keyframes ck-glow-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.04); }
+}
+
+@keyframes ck-reveal-rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ck-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --ck-dur-hover: 0ms; /* @kind other */ --ck-dur-reveal: 0ms; /* @kind other */ }
+}

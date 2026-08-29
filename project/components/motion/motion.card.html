@@ -1,0 +1,35 @@
+<!-- @dsCard group="Components" viewport="700x520" name="Motion" subtitle="Glow orb, feature cycler, count-up stats, partner marquee" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{box-sizing:border-box}body{margin:0;background:var(--ck-void);color:var(--ck-white);font-family:var(--font-body)}a{color:var(--ck-cyan);text-decoration:none}a:hover{color:var(--ck-cyan-bright)}.pad{padding:20px 24px;display:flex;flex-direction:column;gap:16px}.lbl{font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--ck-muted)}</style>
+</head><body><div id="root"></div><script type="text/babel">
+const { GlowOrb, FeatureCycler, CountUp, StatTile, Reveal, LogoMarquee } = window.CodeKerdosDesignSystem_68bc71;
+
+function Demo() {
+  return (
+    <div className="pad">
+      <div style={{display:'flex',gap:24,alignItems:'center'}}>
+        <GlowOrb size={150} />
+        <div style={{flex:1}}>
+          <FeatureCycler style={{gridTemplateColumns:'160px 1fr',gap:24}} items={[
+            { label: 'Live Sessions', body: 'Learn in real time and revisit lessons anytime with recorded sessions.' },
+            { label: 'Expert Mentorship', body: 'Weekly 1:1 plus on-demand access to mentors from FAANG and top tech firms.' },
+            { label: 'Real-world Projects', body: '15+ real deployable projects, not toy exercises.' }
+          ]} />
+        </div>
+      </div>
+      <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:12}}>
+        <StatTile value={<CountUp to={92} suffix="%" />} label="Landed jobs within 6 months." />
+        <StatTile value={<CountUp to={120} suffix="%" />} label="Average hike in learners' CTC." />
+        <StatTile value={<CountUp to={50} suffix="+" />} label="Top tech companies hire from us." />
+        <StatTile value={<CountUp to={40} suffix="+" />} label="Mentors from FAANG & top tech." />
+      </div>
+      <Reveal><LogoMarquee names={['Microsoft','Amazon','Meta','Zomato','Flipkart','Samsung','Swiggy','Oracle','Google']} /></Reveal>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script></body></html>

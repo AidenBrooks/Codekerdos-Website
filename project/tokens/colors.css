@@ -1,0 +1,53 @@
+:root {
+  /* --- Base surfaces: dark is home base --- */
+  --ck-void: #000000;
+  --ck-surface: #0B0F1A;
+  --ck-elevated: #111827;
+  --ck-border: #1F2937;
+  --ck-border-strong: #2A3348;
+  --ck-outline: #3A4258;
+
+  /* --- Brand accent --- */
+  --ck-cyan: #13B0E8;
+  --ck-cyan-bright: #00C6FF;
+  --ck-blue-deep: #0072FF;
+  --ck-teal-deep: #0B6382;
+  --ck-orange: #FF7A59;
+
+  /* --- Section tints (dark hero unlocking into pale proof sections) --- */
+  --ck-tint-cyan: #E4F6FD;
+  --ck-tint-teal: #E3F5F1;
+  --ck-tint-orange: #FFEDE6;
+  --ck-tint-neutral: #F4F5F7;
+  --ck-tint-steel: #CFE3EC;
+  --ck-tint-steel-deep: #BCD7E3;
+
+  /* --- Text --- */
+  --ck-white: #FFFFFF;
+  --ck-muted: #9AA5BD;
+  --ck-ink: #0B0F1A;
+  --ck-ink-muted: #5A6478;
+
+  /* --- Semantic --- */
+  --ck-success: #22C55E;
+  --ck-success-ink: #0B3D20;
+
+  /* --- Gradients --- */
+  --ck-grad-orb: linear-gradient(135deg, #13B0E8 0%, #0B6382 100%); /* @kind color */
+  --ck-grad-button: linear-gradient(90deg, #00C6FF 0%, #0072FF 100%); /* @kind color */
+  --ck-grad-text: linear-gradient(90deg, #00C6FF 0%, #13B0E8 100%); /* @kind color */
+  --ck-grad-bleed: linear-gradient(180deg, #000000 0%, var(--ck-tint-cyan) 100%); /* @kind color */
+
+  /* --- Semantic aliases --- */
+  --bg-page: var(--ck-void);
+  --bg-section: var(--ck-surface);
+  --surface-card: var(--ck-elevated);
+  --surface-card-tint: var(--ck-tint-cyan);
+  --border-hairline: var(--ck-border);
+  --text-heading: var(--ck-white);
+  --text-body: var(--ck-muted);
+  --text-body-on-tint: var(--ck-ink);
+  --text-accent: var(--ck-cyan);
+  --accent-primary: var(--ck-cyan);
+  --accent-highlight: var(--ck-orange);
+}

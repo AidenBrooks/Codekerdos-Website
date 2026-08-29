@@ -1,0 +1,25 @@
+:root {
+  /* Shadows — glow on dark, soft lift on tint */
+  --ck-shadow-glow: 0 8px 24px rgba(19, 176, 232, 0.35);
+  --ck-shadow-glow-strong: 0 12px 40px rgba(19, 176, 232, 0.45);
+  --ck-shadow-card: 0 4px 8px rgba(0, 0, 0, 0.35);
+  --ck-shadow-card-hover: 0 12px 24px rgba(0, 0, 0, 0.45);
+  --ck-shadow-tint-card: 0 4px 8px rgba(11, 15, 26, 0.06);
+  --ck-shadow-tint-card-hover: 0 12px 24px rgba(11, 15, 26, 0.10);
+
+  /* Borders */
+  --ck-border-width: 1px; /* @kind spacing */
+  --ck-border-width-strong: 1.5px; /* @kind spacing */
+  --ck-hairline: 1px solid var(--ck-border); /* @kind other */
+  --ck-hairline-strong: 1px solid var(--ck-border-strong); /* @kind other */
+
+  /* Translucency + blur */
+  --ck-veil-cyan: rgba(19, 176, 232, 0.08);
+  --ck-veil-cyan-hover: rgba(19, 176, 232, 0.16);
+  --ck-veil-white: rgba(255, 255, 255, 0.04);
+  --ck-veil-ink: rgba(11, 15, 26, 0.05);
+  --ck-blur-nav: saturate(180%) blur(16px); /* @kind other */
+
+  /* Radial glow behind hero orb */
+  --ck-glow-radial: radial-gradient(circle at 50% 50%, rgba(19,176,232,0.45) 0%, rgba(19,176,232,0.12) 45%, rgba(19,176,232,0) 70%); /* @kind color */
+}

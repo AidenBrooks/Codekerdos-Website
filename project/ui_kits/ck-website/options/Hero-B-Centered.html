@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hero B — Centered spotlight</title>
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+:root{--page:#F5FAFE;--ink:#0F1B2A;--ink-2:#46586F;--ink-3:#6C7C93;--brand:#13B0E8;--brand-deep:#0072FF;--brand-ink:#0B6382}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--page);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1{font-family:var(--font-display);margin:0}p{margin:0}a{text-decoration:none;color:var(--brand-ink)}a:hover{color:var(--brand)}
+.nav{position:relative;z-index:20;max-width:1300px;margin:18px auto 0;padding:12px 18px;display:flex;align-items:center;gap:36px;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border:1px solid rgba(19,176,232,.18);border-radius:999px;box-shadow:0 12px 30px rgba(11,50,90,.08)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font:800 19px/1 var(--font-display);letter-spacing:-.6px}
+.brand span{width:34px;height:34px;border-radius:11px;background:var(--ck-grad-button);display:grid;place-items:center;font-size:13px;color:#fff;letter-spacing:-1px}
+.brand span b{color:#BFF0FF}
+.links{display:flex;gap:26px;margin:0 auto}
+.links a{color:var(--ink-2);font-size:14px;font-weight:600}.links a.on{color:var(--brand-deep)}
+.login{background:var(--ck-grad-button);color:#fff;font-size:14px;font-weight:700;padding:11px 24px;border-radius:999px}.login:hover{color:#fff}
+.hero{position:relative;text-align:center;padding:64px 24px 0;overflow:hidden}
+.beam{position:absolute;left:50%;top:-140px;transform:translateX(-50%);width:1100px;height:700px;background:radial-gradient(50% 50% at 50% 40%,rgba(19,176,232,.28),transparent 72%);filter:blur(30px);pointer-events:none}
+.kicker{position:relative;display:inline-flex;align-items:center;gap:10px;font:800 11.5px/1 var(--font-display);letter-spacing:2.2px;text-transform:uppercase;color:var(--brand-ink);background:#fff;border:1px solid rgba(19,176,232,.28);padding:10px 20px;border-radius:999px;box-shadow:0 8px 22px rgba(11,50,90,.07)}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--brand);animation:blip 2.2s infinite}
+@keyframes blip{50%{opacity:.3}}
+h1{position:relative;margin:28px auto 0;max-width:1000px;font-size:78px;font-weight:800;line-height:1.03;letter-spacing:-3.4px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--brand-deep)}
+.sub{position:relative;margin:22px auto 0;max-width:640px;color:var(--ink-2);font-size:17px;line-height:1.72;text-wrap:pretty}
+.search{position:relative;display:flex;align-items:center;gap:10px;margin:30px auto 0;max-width:600px;background:#fff;border:1px solid rgba(19,176,232,.3);border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 18px 44px rgba(11,50,90,.12)}
+.search:focus-within{border-color:var(--brand)}
+.search .mag{width:17px;height:17px;flex:0 0 17px;border:2px solid var(--brand-ink);border-radius:50%;position:relative}
+.search .mag::after{content:"";position:absolute;right:-5px;bottom:-4px;width:7px;height:2px;background:var(--brand-ink);transform:rotate(45deg)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:400 15.5px/1 var(--font-body);color:var(--ink);text-align:left}
+.search input::placeholder{color:var(--ink-3)}
+.search button{border:0;cursor:pointer;background:var(--ck-grad-button);color:#fff;font:700 14.5px/1 var(--font-display);padding:14px 26px;border-radius:999px}
+.cta{position:relative;display:flex;gap:14px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.p1{background:var(--ck-grad-button);color:#fff;font-weight:700;font-size:15.5px;padding:15px 28px;border-radius:12px;box-shadow:0 14px 32px rgba(0,114,255,.3)}.p1:hover{color:#fff}
+.p2{background:#fff;color:var(--ink);font-weight:700;font-size:15.5px;padding:15px 26px;border-radius:12px;border:1.5px solid rgba(19,176,232,.5)}.p2:hover{color:var(--ink)}
+.stage{position:relative;height:600px;max-width:1240px;margin:26px auto 0}
+.plinth{position:absolute;left:50%;bottom:70px;transform:translateX(-50%);width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at 50% 42%,#E3F4FE,#C6E4F8 62%,transparent 74%)}
+.floor{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);width:360px;height:56px;border-radius:50%;background:radial-gradient(50% 50%,rgba(11,50,90,.24),transparent 72%);filter:blur(10px)}
+.stage img{position:absolute;left:50%;bottom:66px;transform:translateX(-50%);height:560px;width:auto;display:block;z-index:2}
+.card{position:absolute;z-index:3;width:178px;display:flex;gap:9px;padding:11px 12px;border-radius:16px;background:rgba(255,255,255,.95);border:1px solid rgba(19,176,232,.2);box-shadow:0 18px 38px rgba(11,50,90,.14);transform:rotate(var(--r)) translateY(var(--y,0));animation:bob 9s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:rotate(var(--r)) translateY(0)}50%{transform:rotate(var(--r)) translateY(-13px)}}
+.card .ic{width:28px;height:28px;flex:0 0 28px;border-radius:9px;background:linear-gradient(150deg,rgba(19,176,232,.22),rgba(0,114,255,.13));display:grid;place-items:center;font:600 10px/1 var(--font-mono);color:var(--brand-ink)}
+.card b{display:block;font:700 12.5px/1.25 var(--font-display);letter-spacing:-.2px;color:var(--ink);text-align:left}
+.card em{display:block;font-style:normal;margin-top:3px;font-size:11px;line-height:1.4;color:var(--ink-2);text-align:left}
+.k1{--r:-13deg;left:16px;top:150px;animation-delay:-.3s}
+.k2{--r:-8deg;left:70px;top:318px;animation-delay:-2s}
+.k3{--r:-3deg;left:186px;top:456px;animation-delay:-3.4s}
+.k4{--r:13deg;right:16px;top:136px;animation-delay:-1.1s}
+.k5{--r:8deg;right:66px;top:304px;animation-delay:-2.6s}
+.k6{--r:3deg;right:182px;top:444px;animation-delay:-4.3s}
+.k7{--r:0deg;left:50%;margin-left:-89px;top:36px;animation-delay:-5.5s}
+.pt{background:#fff;border-top:1px solid rgba(15,27,42,.06);overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.tk{display:flex;gap:56px;width:max-content;padding:26px 0;animation:sl 38s linear infinite}
+@keyframes sl{to{transform:translateX(-50%)}}
+.tk span{font:700 20px/1 var(--font-display);letter-spacing:-.4px;color:#5B6A80;white-space:nowrap}
+@media(max-width:1240px){h1{font-size:52px;letter-spacing:-2px}.links{display:none}.card{position:static;width:auto;margin:8px;transform:none;animation:none}.stage{height:auto}.stage img{position:relative;left:auto;bottom:auto;transform:none;height:420px;margin:0 auto}.plinth,.floor{display:none}}
+</style></head><body>
+<nav class="nav"><a class="brand" href="#"><span>C<b>K</b></span>CodeKerdos</a>
+<div class="links"><a class="on" href="#">Overview</a><a href="#">Courses</a><a href="#">Masterclass</a><a href="#">Testimonials</a><a href="#">Blogs</a><a href="#">FAQs</a><a href="#">Contact</a></div>
+<a class="login" href="#">Login</a></nav>
+<header class="hero">
+<span class="beam"></span>
+<div class="kicker"><i></i>India's Most Practical AI Engineering Platform</div>
+<h1>Build AI Products. <em>Crack Top Interviews.</em> Get Hired Faster.</h1>
+<p class="sub">Master DSA &amp; System Design, Gen-AI with RAG &amp; Agentic AI, DevOps/SRE, And AI FDE with Live Mentorship and Real-World Production-Grade Projects.</p>
+<form class="search" onsubmit="return false" role="search"><span class="mag"></span><input type="search" aria-label="Search courses" placeholder="Search courses, topics or skills"><button type="submit">Search</button></form>
+<div class="cta"><a class="p1" href="#">Book A Free Webinar</a><a class="p2" href="#">Request A Callback</a></div>
+<div class="stage">
+<span class="plinth"></span><span class="floor"></span>
+<img src="../character-cutout.png" alt="CodeKerdos learner with a laptop">
+<div class="card k7"><span class="ic">AI</span><span><b>AI &amp; GenAI</b><em>Build intelligent AI powered apps</em></span></div>
+<div class="card k1"><span class="ic">&lt;/&gt;</span><span><b>Spring Boot With AI</b><em>Spring Cloud Microservices &amp; more</em></span></div>
+<div class="card k2"><span class="ic">SD</span><span><b>System Design</b><em>Design scalable Systems</em></span></div>
+<div class="card k3"><span class="ic">Ops</span><span><b>DevOps &amp; SRE</b><em>AWS Kubernetes SRE Practices</em></span></div>
+<div class="card k4"><span class="ic">DB</span><span><b>Data Structures &amp; Algorithms</b><em>Fundamentals for Interviews</em></span></div>
+<div class="card k5"><span class="ic">Prj</span><span><b>Real-world Projects</b><em>Build Deploy Showcase.</em></span></div>
+<div class="card k6"><span class="ic">Hi</span><span><b>Career &amp; Interview Preparation</b><em>Mock Interviews &amp; Resumes Placement Support</em></span></div>
+</div>
+</header>
+<div class="pt"><div class="tk">
+<span>Samsung</span><span>Swiggy</span><span>Oracle</span><span>Google</span><span>Microsoft</span><span>amazon.in</span><span>Meta</span><span>zomato</span><span>Flipkart</span>
+<span>Samsung</span><span>Swiggy</span><span>Oracle</span><span>Google</span><span>Microsoft</span><span>amazon.in</span><span>Meta</span><span>zomato</span><span>Flipkart</span>
+</div></div>
+</body></html>

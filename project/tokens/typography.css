@@ -1,0 +1,46 @@
+:root {
+  /* Display scale — Public Sans, tight tracking, heavy weights */
+  --ck-h1-size: 64px;      /* @kind font */
+  --ck-h1-lh: 1.04;        /* @kind font */
+  --ck-h1-track: -1.5px;   /* @kind font */
+  --ck-h1-weight: 800;     /* @kind font */
+  --ck-h2-size: 40px;      /* @kind font */
+  --ck-h2-lh: 1.1;         /* @kind font */
+  --ck-h2-track: -0.8px;   /* @kind font */
+  --ck-h2-weight: 700;     /* @kind font */
+  --ck-h3-size: 26px;      /* @kind font */
+  --ck-h3-lh: 1.2;         /* @kind font */
+  --ck-h3-track: -0.3px;   /* @kind font */
+  --ck-h3-weight: 700;     /* @kind font */
+  --ck-h4-size: 19px;      /* @kind font */
+  --ck-h4-lh: 1.3;         /* @kind font */
+  --ck-h4-track: 0;        /* @kind font */
+  --ck-h4-weight: 600;     /* @kind font */
+
+  /* Body scale — Inter */
+  --ck-body-lg-size: 18px; /* @kind font */
+  --ck-body-lg-lh: 1.6;    /* @kind font */
+  --ck-body-size: 15px;    /* @kind font */
+  --ck-body-lh: 1.6;       /* @kind font */
+  --ck-small-size: 13px;   /* @kind font */
+  --ck-small-lh: 1.5;      /* @kind font */
+
+  /* Eyebrow / label */
+  --ck-eyebrow-size: 12px;      /* @kind font */
+  --ck-eyebrow-track: 1.6px;    /* @kind font */
+  --ck-eyebrow-weight: 700;     /* @kind font */
+
+  --ck-weight-regular: 400;   /* @kind font */
+  --ck-weight-medium: 500;    /* @kind font */
+  --ck-weight-semibold: 600;  /* @kind font */
+  --ck-weight-bold: 700;      /* @kind font */
+  --ck-weight-black: 800;     /* @kind font */
+
+  /* Semantic aliases — shorthand font declarations */
+  --type-display: var(--ck-weight-black) var(--ck-h1-size)/var(--ck-h1-lh) var(--font-display);   /* @kind font */
+  --type-h2: var(--ck-weight-bold) var(--ck-h2-size)/var(--ck-h2-lh) var(--font-display);         /* @kind font */
+  --type-h3: var(--ck-weight-bold) var(--ck-h3-size)/var(--ck-h3-lh) var(--font-display);         /* @kind font */
+  --type-card-title: var(--ck-weight-semibold) var(--ck-h4-size)/var(--ck-h4-lh) var(--font-display); /* @kind font */
+  --type-body: var(--ck-weight-regular) var(--ck-body-size)/var(--ck-body-lh) var(--font-body);   /* @kind font */
+  --type-body-lg: var(--ck-weight-regular) var(--ck-body-lg-size)/var(--ck-body-lg-lh) var(--font-body); /* @kind font */
+}

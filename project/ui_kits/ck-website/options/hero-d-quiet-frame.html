@@ -1,0 +1,65 @@
+<!-- @dsCard group="Website" viewport="1440x900" name="Hero D — Quiet Frame" subtitle="Full-bleed character, Swiss hairline grid, copy overlaid left" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hero D — Quiet Frame</title>
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+:root{--page:#F4FAFE;--brand:#13B0E8;--brand-deep:#0072FF;--brand-ink:#0B6382;--ink:#0C1826;--ink-2:#46586F;--ink-3:#8797AC;--rule:rgba(12,24,38,.09)}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+h1{font-family:var(--font-display);margin:0}p{margin:0}
+a{color:var(--brand-ink);text-decoration:none}a:hover{color:var(--brand)}
+::selection{background:var(--brand);color:#fff}
+.hero{position:relative;width:1440px;height:900px;overflow:hidden;background:var(--page)}
+.grid{position:absolute;inset:0;z-index:1;pointer-events:none;display:grid;grid-template-columns:repeat(12,1fr);padding:0 88px}
+.grid i{border-left:1px solid var(--rule)}.grid i:last-child{border-right:1px solid var(--rule)}
+.hline{position:absolute;left:0;right:0;height:1px;background:var(--rule);z-index:1}
+.h-nav{top:96px}.h-base{bottom:132px}
+.nav{position:relative;z-index:5;padding:34px 88px 0;display:flex;align-items:center;gap:46px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:34px;height:34px;border-radius:11px;background:var(--ck-grad-button);display:grid;place-items:center;font:800 13px/1 var(--font-display);letter-spacing:-.6px;color:#fff}
+.brand-mark b{color:#BFF0FF}
+.brand-word{font:800 18px/1 var(--font-display);letter-spacing:-.5px}
+.nav-links{display:flex;gap:30px;margin:0 auto}
+.nav-links a{color:var(--ink-2);font-size:14px;font-weight:500}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;font:700 13.5px/1 var(--font-display);color:#fff;background:var(--ck-grad-button);padding:12px 20px;border-radius:999px}
+.nav-cta:hover{color:#fff}
+.figure{position:absolute;right:0;bottom:0;top:0;width:760px;z-index:2}
+.figure::before{content:"";position:absolute;right:-90px;bottom:-140px;width:820px;height:820px;border-radius:50%;background:radial-gradient(closest-side,rgba(19,176,232,.20),rgba(19,176,232,0) 72%)}
+.figure img{position:absolute;right:24px;bottom:0;height:830px;width:auto;display:block;filter:drop-shadow(0 40px 60px rgba(11,50,90,.18))}
+.copy{position:absolute;left:88px;top:232px;z-index:4;width:640px}
+.eyebrow{display:flex;align-items:center;gap:12px;font:600 11.5px/1 var(--font-mono);letter-spacing:2.4px;text-transform:uppercase;color:var(--brand-ink)}
+.eyebrow s{width:44px;height:1px;background:var(--brand);text-decoration:none}
+h1{margin-top:30px;font-weight:800;font-size:82px;line-height:.98;letter-spacing:-3.4px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--brand-deep)}
+.sub{margin-top:28px;max-width:452px;font-size:17.5px;line-height:1.62;color:var(--ink-2);text-wrap:pretty}
+.cta{margin-top:44px;display:flex;align-items:center;gap:26px}
+.cta .go{display:inline-flex;align-items:center;gap:11px;background:var(--ck-grad-button);color:#fff;font:700 15px/1 var(--font-display);padding:17px 30px;border-radius:999px;transition:transform .2s,box-shadow .2s}
+.cta .go:hover{color:#fff;transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,114,255,.32)}
+.cta .quiet{font:600 14.5px/1 var(--font-display);color:var(--ink-2);border-bottom:1px solid var(--rule);padding-bottom:5px}
+.cta .quiet:hover{color:var(--brand-ink);border-color:var(--brand)}
+.meta{position:absolute;left:88px;right:88px;bottom:56px;z-index:4;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.meta div b{display:block;font:800 30px/1 var(--font-display);letter-spacing:-1.4px;color:var(--ink)}
+.meta div span{display:block;margin-top:9px;font:500 11.5px/1 var(--font-mono);letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-3)}
+</style></head><body>
+<section class="hero" data-screen-label="Hero D — Quiet Frame">
+<div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<span class="hline h-nav"></span><span class="hline h-base"></span>
+<div class="figure"><img src="../character-cutout.png" alt="CodeKerdos learner with a laptop"></div>
+<nav class="nav">
+<a class="brand" href="#"><span class="brand-mark">C<b>K</b></span><span class="brand-word">CodeKerdos</span></a>
+<div class="nav-links"><a href="#">Programs</a><a href="#">Mentors</a><a href="#">Outcomes</a><a href="#">Pricing</a></div>
+<a class="nav-cta" href="#">Book a call</a>
+</nav>
+<div class="copy">
+<div class="eyebrow"><s></s>Live cohorts · 2026</div>
+<h1>Learn to build what <em>ships.</em></h1>
+<p class="sub">Project-first cohorts in AI, backend and systems, taught by engineers who work at scale.</p>
+<div class="cta"><a class="go" href="#">Explore programs</a><a class="quiet" href="#">See placement report</a></div>
+</div>
+<div class="meta">
+<div><b>12,400</b><span>Learners</span></div>
+<div><b>96%</b><span>Placed in 6 months</span></div>
+<div><b>8</b><span>Live tracks</span></div>
+<div><b>₹18.4L</b><span>Median CTC</span></div>
+</div>
+</section>
+</body></html>
